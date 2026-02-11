@@ -88,7 +88,7 @@ export const Carousel = () => {
       id: 14,
       name: 'Toby',
       breed: 'Husky',
-      image: 'https://i.postimg.cc/y6LkfTRQ/Whats_App_Image_2026_02_11_at_15_51_20_(1).jpg',
+      image: 'https://i.postimg.cc/bJ0cC8vy/Whats-App-Image-2026-02-11-at-18-32-01.jpg',
     },
   ];
 
@@ -142,7 +142,7 @@ export const Carousel = () => {
                       <img
                         src={pet.image}
                         alt={pet.name}
-                        className="w-full h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] object-cover rounded-2xl sm:rounded-3xl shadow-lg sm:shadow-2xl"
+                        className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[650px] xl:h-[700px] object-cover rounded-2xl sm:rounded-3xl shadow-lg sm:shadow-2xl"
                       />
                       
                       {/* Overlay con nombre */}
