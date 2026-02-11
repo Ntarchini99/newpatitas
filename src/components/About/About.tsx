@@ -38,7 +38,7 @@ export const About = () => {
                 className="rounded-2xl shadow-xl h-64 w-full object-cover hover:scale-105 transition-transform duration-300"
               />
               <img
-                src="https://i.postimg.cc/jjSWdfQ1/f.jpg"
+                src="https://i.postimg.cc/dtrd5x2C/Whats-App-Image-2026-02-11-at-18-30-10.jpg"
                 alt="Mascota en viaje"
                 className="rounded-2xl shadow-xl h-64 w-full object-cover mt-8 hover:scale-105 transition-transform duration-300"
               />

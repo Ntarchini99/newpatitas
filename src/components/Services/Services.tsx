@@ -5,10 +5,12 @@ export const Services = () => {
     {
       title: 'Transporte Local',
       description: 'Traslados dentro de la provincia de Buenos Aires, y hacia todas las provincias de la Argentina.',
-      features: ['Vehículos climatizados', 'Kit veterinarios', 'Jaulas transportadoras', 'Seguimiento con fotos y videos', 'Ubicación en tiempo real'],
+      features: ['Vehiculos climatizados', 'Kit veterinarios', 'Jaulas transportadoras', 'Seguimiento con fotos y videos', 'Ubicacion en tiempo real'],
       color: 'from-blue-500 to-cyan-500',
       bgPattern: 'from-blue-50 to-cyan-50',
-      image: 'https://i.postimg.cc/nrSrCHZF/Whats_App_Image_2026_02_11_at_15_51_22_(4).jpg'
+      image: 'https://i.postimg.cc/nrSrCHZF/Whats_App_Image_2026_02_11_at_15_51_22_(4).jpg',
+      barColor: '#f0bebe',
+      iconColor: '#f0bebe'
     },
     {
       title: 'Transporte terrestre Internacional',
@@ -16,7 +18,9 @@ export const Services = () => {
       features: ['Confort garantizado en trayectos largos.', 'Protocolos de hidratación y alimentación en ruta.', 'Seguimiento personalizado durante todo el trayecto', 'Asesoramiento integral para el cruce de fronteras.', 'Ubicación en tiempo real'],
       color: 'from-purple-500 to-pink-500',
       bgPattern: 'from-purple-50 to-pink-50',
-      image: 'https://i.postimg.cc/PJVJPtht/Whats_App_Image_2026_02_11_at_15_51_22_(3).jpg'
+      image: 'https://i.postimg.cc/PJVJPtht/Whats_App_Image_2026_02_11_at_15_51_22_(3).jpg',
+      barColor: '#5bb897',
+      iconColor: '#5bb897'
     },
   ];
 
@@ -82,7 +86,10 @@ export const Services = () => {
                             className="flex items-start sm:items-center gap-2 sm:gap-3 text-gray-800 transform group-hover:translate-x-1 sm:group-hover:translate-x-2 transition-transform duration-300" 
                             style={{ transitionDelay: `${idx * 100}ms` }}
                           >
-                            <div className={`flex-shrink-0 w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 bg-gradient-to-br ${service.color} rounded-full flex items-center justify-center shadow-md mt-0.5 sm:mt-0`}>
+                            <div 
+                              className="flex-shrink-0 w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 rounded-full flex items-center justify-center shadow-md mt-0.5 sm:mt-0"
+                              style={{ backgroundColor: service.iconColor }}
+                            >
                               <CheckCircle className="text-white" size={16} />
                             </div>
                             <span className="text-sm sm:text-base font-medium text-left leading-snug">{feature}</span>
@@ -93,7 +100,10 @@ export const Services = () => {
                   </div>
 
                   {/* Bottom accent bar */}
-                  <div className={`h-1.5 sm:h-2 bg-gradient-to-r ${service.color}`}></div>
+                  <div 
+                    className="h-1.5 sm:h-2" 
+                    style={{ backgroundColor: service.barColor }}
+                  ></div>
                 </div>
               </div>
             </div>

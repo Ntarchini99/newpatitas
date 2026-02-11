@@ -16,7 +16,7 @@ export const Carousel = () => {
       id: 2,
       name: 'Rocky',
       breed: 'Bulldog',
-      image: 'https://i.postimg.cc/PfSP6MZ5/Whats_App_Image_2026_02_11_at_15_51_18_(1).jpg',
+      image: 'https://i.postimg.cc/dtrd5x2C/Whats-App-Image-2026-02-11-at-18-30-10.jpg',
     },
     {
       id: 3,
