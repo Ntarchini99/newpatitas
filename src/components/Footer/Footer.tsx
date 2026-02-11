@@ -19,13 +19,13 @@ export const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.facebook.com/PatitasCaroficial"
                 className="bg-white/10 p-2 rounded-full hover:bg-primary transition-colors duration-300"
               >
                 <Facebook size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/patitas_car/"
                 className="bg-white/10 p-2 rounded-full hover:bg-primary transition-colors duration-300"
               >
                 <Instagram size={20} />
