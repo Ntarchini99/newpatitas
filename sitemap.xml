@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Página principal -->
+  <url>
+    <loc>https://patitascar.com.ar/</loc>
+    <lastmod>2025-07-13</lastmod>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- Sección Inicio -->
+  <url>
+    <loc>https://patitascar.com.ar/#inicio</loc>
+    <lastmod>2025-07-13</lastmod>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Sección Nosotros -->
+  <url>
+    <loc>https://patitascar.com.ar/#nosotros</loc>
+    <lastmod>2025-07-13</lastmod>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Sección Servicios -->
+  <url>
+    <loc>https://patitascar.com.ar/#servicios</loc>
+    <lastmod>2025-07-13</lastmod>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Sección Galería -->
+  <url>
+    <loc>https://patitascar.com.ar/#galeria</loc>
+    <lastmod>2025-07-13</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Sección Contacto -->
+  <url>
+    <loc>https://patitascar.com.ar/#contacto</loc>
+    <lastmod>2025-07-13</lastmod>
+    <priority>0.80</priority>
+  </url>
+</urlset>

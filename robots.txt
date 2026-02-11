@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://patitascar.com.ar/sitemap.xml
