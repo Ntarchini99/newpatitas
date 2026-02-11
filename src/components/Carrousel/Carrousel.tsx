@@ -8,15 +8,21 @@ export const Carousel = () => {
   const pets = [
     {
       id: 1,
-      image: 'https://i.postimg.cc/jjSWdfQ1/f.jpg',
+      name: 'Rocky',
+      breed: 'Bulldog',
+      image: 'https://i.postimg.cc/wTbFdLKz/Whats-App-Image-2026-02-11-at-15-51-18.jpg',
     },
     {
       id: 2,
-      image: 'https://i.postimg.cc/sfkP36k6/g.jpg',
+      name: 'Rocky',
+      breed: 'Bulldog',
+      image: 'https://i.postimg.cc/PfSP6MZ5/Whats_App_Image_2026_02_11_at_15_51_18_(1).jpg',
     },
     {
       id: 3,
-      image: 'https://i.postimg.cc/bY70qC7V/a.jpg',
+      name: 'Rocky',
+      breed: 'Bulldog',
+      image: 'https://i.postimg.cc/4y2ymJZY/Whats_App_Image_2026_02_11_at_15_51_18_(2).jpg',
     },
     {
       id: 4,
@@ -28,13 +34,61 @@ export const Carousel = () => {
       id: 5,
       name: 'Coco',
       breed: 'Beagle',
-      image: 'https://images.unsplash.com/photo-1505628346881-b72b27e84530?w=800&h=600&fit=crop',
+      image: 'https://i.postimg.cc/MH3HvWxf/Whats_App_Image_2026_02_11_at_15_51_19.jpg',
     },
     {
       id: 6,
       name: 'Toby',
       breed: 'Husky',
-      image: 'https://images.unsplash.com/photo-1568572933382-74d440642117?w=800&h=600&fit=crop',
+      image: 'https://i.postimg.cc/sfTvnJWc/Whats_App_Image_2026_02_11_at_15_51_19_(1).jpg',
+    },
+    {
+      id: 7,
+      name: 'Toby',
+      breed: 'Husky',
+      image: 'https://i.postimg.cc/XNsp2g5L/Whats_App_Image_2026_02_11_at_15_51_20.jpg',
+    },
+    {
+      id: 8,
+      name: 'Toby',
+      breed: 'Husky',
+      image: 'https://i.postimg.cc/PJVJPtht/Whats_App_Image_2026_02_11_at_15_51_22_(3).jpg',
+    },
+    {
+      id: 9,
+      name: 'Toby',
+      breed: 'Husky',
+      image: 'https://i.postimg.cc/d3N3Lqvt/Whats_App_Image_2026_02_11_at_15_51_22_(2).jpg',
+    },
+    {
+      id: 10,
+      name: 'Toby',
+      breed: 'Husky',
+      image: 'https://i.postimg.cc/7YbbjTMk/Whats_App_Image_2026_02_11_at_15_51_22_(1).jpg',
+    },
+    {
+      id: 11,
+      name: 'Toby',
+      breed: 'Husky',
+      image: 'https://i.postimg.cc/nrSrCHZF/Whats_App_Image_2026_02_11_at_15_51_22_(4).jpg',
+    },
+    {
+      id: 12,
+      name: 'Toby',
+      breed: 'Husky',
+      image: 'https://i.postimg.cc/pVsp0B8v/Whats_App_Image_2026_02_11_at_15_51_22.jpg',
+    },
+    {
+      id: 13,
+      name: 'Toby',
+      breed: 'Husky',
+      image: 'https://i.postimg.cc/y6LkfTRM/Whats_App_Image_2026_02_11_at_15_51_20_(2).jpg',
+    },
+    {
+      id: 14,
+      name: 'Toby',
+      breed: 'Husky',
+      image: 'https://i.postimg.cc/y6LkfTRQ/Whats_App_Image_2026_02_11_at_15_51_20_(1).jpg',
     },
   ];
 

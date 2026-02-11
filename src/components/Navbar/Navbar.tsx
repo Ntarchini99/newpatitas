@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, PawPrint, Instagram, Facebook } from 'lucide-react';
+import { Menu, X, Instagram, Facebook } from 'lucide-react';
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,8 +43,12 @@ export const Navbar = () => {
             className="flex items-center space-x-2 cursor-pointer group"
             onClick={() => scrollToSection('inicio')}
           >
-            <div className="bg-primary p-2 rounded-full group-hover:scale-110 transition-transform duration-300">
-              <PawPrint className="text-white" size={28} />
+            <div className="p-1 rounded-full group-hover:scale-110 transition-transform duration-300 ">
+              <img 
+                src="https://i.postimg.cc/HnN8Pxb4/logo.jpg" 
+                alt="Patitas Car Logo" 
+                className="w-14 h-14 rounded-full object-cover"
+              />
             </div>
             <span className={`text-2xl font-bold transition-colors duration-300 ${
               scrolled ? 'text-gray-800' : 'text-white'

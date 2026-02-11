@@ -59,7 +59,7 @@ export const Hero = () => {
               <div className="relative max-w-md mx-auto md:max-w-none">
 
                 <img
-                  src="https://i.postimg.cc/jjSWdfQ1/f.jpg"
+                  src="https://i.postimg.cc/MH3HvWxf/Whats_App_Image_2026_02_11_at_15_51_19.jpg"
                   alt="Perro feliz en auto"
                   className="rounded-3xl shadow-2xl animate-float transition-transform duration-500 hover:scale-105"
                 />

@@ -8,15 +8,15 @@ export const Services = () => {
       features: ['Vehículos climatizados', 'Kit veterinarios', 'Jaulas transportadoras', 'Seguimiento con fotos y videos', 'Ubicación en tiempo real'],
       color: 'from-blue-500 to-cyan-500',
       bgPattern: 'from-blue-50 to-cyan-50',
-      image: 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&h=400&fit=crop'
+      image: 'https://i.postimg.cc/nrSrCHZF/Whats_App_Image_2026_02_11_at_15_51_22_(4).jpg'
     },
     {
       title: 'Transporte terrestre Internacional',
       description: 'Viajes a paises limitrofes: Santiago de Chile, Sur de Brasil y Asunción del Paraguay o Ciudad del este.',
-      features: ['Vehículos climatizados', 'Kit veterinarios', 'Jaulas transportadoras', 'Seguimiento con fotos y videos', 'Ubicación en tiempo real'],
+      features: ['Confort garantizado en trayectos largos.', 'Protocolos de hidratación y alimentación en ruta.', 'Seguimiento personalizado durante todo el trayecto', 'Asesoramiento integral para el cruce de fronteras.', 'Ubicación en tiempo real'],
       color: 'from-purple-500 to-pink-500',
       bgPattern: 'from-purple-50 to-pink-50',
-      image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=600&h=400&fit=crop'
+      image: 'https://i.postimg.cc/PJVJPtht/Whats_App_Image_2026_02_11_at_15_51_22_(3).jpg'
     },
   ];
 
