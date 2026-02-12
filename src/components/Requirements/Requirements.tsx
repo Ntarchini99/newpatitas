@@ -132,7 +132,7 @@ export const Requirements = () => {
 
               {/* CTA CORREGIDO */}
               <a
-                href="https://www.senasa.gob.ar"
+                href="https://www.argentina.gob.ar/servicio/solicitar-certificacion-veterinaria-para-traslados-al-exterior-de-perros-y-gatos"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 sm:gap-3 w-full px-5 sm:px-6 py-3 sm:py-4 text-white rounded-lg sm:rounded-xl hover:shadow-xl transition-all duration-300 font-semibold text-base sm:text-lg group-hover:scale-105"

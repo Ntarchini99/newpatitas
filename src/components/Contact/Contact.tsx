@@ -1,43 +1,8 @@
-import { useState } from 'react';
 import { Mail, Phone, Send, CheckCircle } from 'lucide-react';
+import { useForm, ValidationError } from '@formspree/react';
 
 export const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    petType: '',
-    service: '',
-    message: '',
-  });
-
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitted(true);
-
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        petType: '',
-        service: '',
-        message: '',
-      });
-    }, 3000);
-  };
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
-  ) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
+  const [state, handleSubmit] = useForm("xeelakea");
 
   return (
     <section id="contacto" className="py-20 bg-gradient-to-b from-white to-[#5bb897]/5">
@@ -100,119 +65,7 @@ export const Contact = () => {
               onSubmit={handleSubmit}
               className="bg-white p-8 rounded-2xl shadow-xl"
             >
-              {!isSubmitted ? (
-                <>
-                  <div className="mb-6">
-                    <label className="block text-gray-700 font-medium mb-2">
-                      Nombre Completo
-                    </label>
-                    <input
-                      type="text"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5bb897] transition-all duration-300"
-                      placeholder="Juan Pérez"
-                    />
-                  </div>
-
-                  <div className="grid md:grid-cols-2 gap-6 mb-6">
-                    <div>
-                      <label className="block text-gray-700 font-medium mb-2">
-                        Email
-                      </label>
-                      <input
-                        type="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5bb897] transition-all duration-300"
-                        placeholder="correo@ejemplo.com"
-                      />
-                    </div>
-
-                    <div>
-                      <label className="block text-gray-700 font-medium mb-2">
-                        Teléfono
-                      </label>
-                      <input
-                        type="tel"
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5bb897] transition-all duration-300"
-                        placeholder="+54 9 11 1234 5678"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="grid md:grid-cols-2 gap-6 mb-6">
-                    <div>
-                      <label className="block text-gray-700 font-medium mb-2">
-                        Tipo de Mascota
-                      </label>
-                      <select
-                        name="petType"
-                        value={formData.petType}
-                        onChange={handleChange}
-                        required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5bb897] transition-all duration-300"
-                      >
-                        <option value="">Seleccionar</option>
-                        <option value="perro">Perro</option>
-                        <option value="gato">Gato</option>
-                        <option value="otro">Otro</option>
-                      </select>
-                    </div>
-
-                    <div>
-                      <label className="block text-gray-700 font-medium mb-2">
-                        Servicio
-                      </label>
-                      <select
-                        name="service"
-                        value={formData.service}
-                        onChange={handleChange}
-                        required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5bb897] transition-all duration-300"
-                      >
-                        <option value="">Seleccionar</option>
-                        <option value="local">Transporte Local</option>
-                        <option value="largo">Viaje Largo</option>
-                        <option value="express">Servicio Express</option>
-                        <option value="programado">Reserva Programada</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div className="mb-6">
-                    <label className="block text-gray-700 font-medium mb-2">
-                      Mensaje
-                    </label>
-                    <textarea
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      required
-                      rows={4}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5bb897] transition-all duration-300 resize-none"
-                      placeholder="Cuéntanos sobre tu necesidad..."
-                    />
-                  </div>
-
-                  <button
-  type="submit"
-  className="w-full bg-[#f0bebe] text-gray-800 py-4 rounded-lg font-semibold flex items-center justify-center gap-2 hover:bg-[#e6a9a9] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
->
-  Enviar Mensaje
-  <Send size={20} />
-</button>
-
-                </>
-              ) : (
+              {state.succeeded ? (
                 <div className="text-center py-12 animate-fade-in">
                   <CheckCircle
                     className="text-green-500 mx-auto mb-4"
@@ -225,6 +78,146 @@ export const Contact = () => {
                     Gracias por contactarnos. Te responderemos pronto.
                   </p>
                 </div>
+              ) : (
+                <>
+                  <div className="mb-6">
+                    <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
+                      Nombre Completo
+                    </label>
+                    <input
+                      id="name"
+                      type="text"
+                      name="name"
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5bb897] transition-all duration-300"
+                      placeholder="Juan Pérez"
+                    />
+                    <ValidationError 
+                      prefix="Nombre" 
+                      field="name"
+                      errors={state.errors}
+                      className="text-red-500 text-sm mt-1"
+                    />
+                  </div>
+
+                  <div className="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                      <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
+                        Email
+                      </label>
+                      <input
+                        id="email"
+                        type="email"
+                        name="email"
+                        required
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5bb897] transition-all duration-300"
+                        placeholder="correo@ejemplo.com"
+                      />
+                      <ValidationError 
+                        prefix="Email" 
+                        field="email"
+                        errors={state.errors}
+                        className="text-red-500 text-sm mt-1"
+                      />
+                    </div>
+
+                    <div>
+                      <label htmlFor="phone" className="block text-gray-700 font-medium mb-2">
+                        Teléfono
+                      </label>
+                      <input
+                        id="phone"
+                        type="tel"
+                        name="phone"
+                        required
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5bb897] transition-all duration-300"
+                        placeholder="+54 9 11 1234 5678"
+                      />
+                      <ValidationError 
+                        prefix="Teléfono" 
+                        field="phone"
+                        errors={state.errors}
+                        className="text-red-500 text-sm mt-1"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                      <label htmlFor="petType" className="block text-gray-700 font-medium mb-2">
+                        Tipo de Mascota
+                      </label>
+                      <select
+                        id="petType"
+                        name="petType"
+                        required
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5bb897] transition-all duration-300"
+                      >
+                        <option value="">Seleccionar</option>
+                        <option value="perro">Perro</option>
+                        <option value="gato">Gato</option>
+                        <option value="otro">Otro</option>
+                      </select>
+                      <ValidationError 
+                        prefix="Tipo de Mascota" 
+                        field="petType"
+                        errors={state.errors}
+                        className="text-red-500 text-sm mt-1"
+                      />
+                    </div>
+
+                    <div>
+                      <label htmlFor="service" className="block text-gray-700 font-medium mb-2">
+                        Servicio
+                      </label>
+                      <select
+                        id="service"
+                        name="service"
+                        required
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5bb897] transition-all duration-300"
+                      >
+                        <option value="">Seleccionar</option>
+                        <option value="local">Traslado Local</option>
+                        <option value="largo">Traslado larga distancia</option>
+                      </select>
+                      <ValidationError 
+                        prefix="Servicio" 
+                        field="service"
+                        errors={state.errors}
+                        className="text-red-500 text-sm mt-1"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="mb-6">
+                    <label htmlFor="message" className="block text-gray-700 font-medium mb-2">
+                      Mensaje
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      required
+                      rows={4}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5bb897] transition-all duration-300 resize-none"
+                      placeholder="Cuéntanos sobre tu necesidad..."
+                    />
+                    <ValidationError 
+                      prefix="Mensaje" 
+                      field="message"
+                      errors={state.errors}
+                      className="text-red-500 text-sm mt-1"
+                    />
+                  </div>
+
+                  <button
+                    type="submit"
+                    disabled={state.submitting}
+                    className="w-full bg-[#f0bebe] text-gray-800 py-4 rounded-lg font-semibold flex items-center justify-center gap-2 hover:bg-[#e6a9a9] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    {state.submitting ? 'Enviando...' : 'Enviar Mensaje'}
+                    <Send size={20} />
+                  </button>
+                </>
               )}
             </form>
           </div>

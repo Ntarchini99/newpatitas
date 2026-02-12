@@ -45,7 +45,7 @@ export const Navbar = () => {
           >
             <div className="p-1 rounded-full group-hover:scale-110 transition-transform duration-300 ">
               <img 
-                src="https://i.postimg.cc/HnN8Pxb4/logo.jpg" 
+                src="https://i.postimg.cc/PqqGKffv/Whats-App-Image-2026-02-11-at-11-41-30.jpg" 
                 alt="Patitas Car Logo" 
                 className="w-14 h-14 rounded-full object-cover"
               />
