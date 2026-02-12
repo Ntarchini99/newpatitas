@@ -21,7 +21,7 @@ export const Carousel = () => {
     {
       id: 3,
       name: 'Becky y Tokio',
-      breed: 'San José de Feliciano a Ostende',
+      breed: 'San José de Feliciano - Ostende',
       image: 'https://i.postimg.cc/4y2ymJZY/Whats_App_Image_2026_02_11_at_15_51_18_(2).jpg',
     },
     {
@@ -33,13 +33,13 @@ export const Carousel = () => {
     {
       id: 5,
       name: 'Cleo',
-      breed: 'Jesus maria, Cordoba - Tartagal, Salta',
+      breed: 'Jesus Maria, Cordoba - Tartagal, Salta',
       image: 'https://i.postimg.cc/MH3HvWxf/Whats_App_Image_2026_02_11_at_15_51_19.jpg',
     },
     {
       id: 6,
       name: 'Chato',
-      breed: 'Pico truncado - Berazategui',
+      breed: 'Pico Truncado - Berazategui',
       image: 'https://i.postimg.cc/XNsp2g5L/Whats_App_Image_2026_02_11_at_15_51_20.jpg',
     },
     {
@@ -56,7 +56,7 @@ export const Carousel = () => {
     },
     {
       id: 9,
-      name: 'Mili Fabi',
+      name: 'Muñi Fabi',
       breed: 'Godoy Cruz, Mendoza - Don Torcuato, Buenos Aires',
       image: 'https://i.postimg.cc/pVsp0B8v/Whats_App_Image_2026_02_11_at_15_51_22.jpg',
     },
