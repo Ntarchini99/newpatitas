@@ -26,6 +26,8 @@ export const Navbar = () => {
     { label: 'Inicio', id: 'inicio' },
     { label: 'Servicios', id: 'servicios' },
     { label: 'Nosotros', id: 'nosotros' },
+    { label: 'Requisitos', id: 'requisitos' },
+    { label: 'Clientes', id: 'galeria' },
     { label: 'Contacto', id: 'contacto' },
   ];
 
