@@ -84,6 +84,18 @@ export const Carousel = () => {
       breed: 'Villa Devoto - Costa Azul',
       image: 'https://i.postimg.cc/XqpTWsBX/Whats_App_Image_2026_02_12_at_16_52_35.jpg',
     },
+    {
+      id: 14,
+      name: 'Billy Boy',
+      breed: 'Cipolleti, Rio Negro - San Telmo, Caba',
+      image: 'https://i.postimg.cc/ncm8rwMn/Whats_App_Image_2026_02_12_at_18_46_32.jpg',
+    },
+    {
+      id: 15,
+      name: 'Simón y Ramses',
+      breed: 'Zarate - Mendoza',
+      image: 'https://i.postimg.cc/MHvhw9fv/Whats_App_Image_2026_02_12_at_16_52_35_(2).jpg',
+    },
   ];
 
   const nextSlide = () => {
