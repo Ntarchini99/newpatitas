@@ -16,28 +16,28 @@
 
   <!-- Sección Nosotros -->
   <url>
-    <loc>https://patitascar.com.ar/#nosotros</loc>
+    <loc>https://patitascar.com.ar/#servicios</loc>
     <lastmod>2025-07-13</lastmod>
     <priority>0.85</priority>
   </url>
 
   <!-- Sección Servicios -->
   <url>
-    <loc>https://patitascar.com.ar/#servicios</loc>
+    <loc>https://patitascar.com.ar/#nosotros</loc>
     <lastmod>2025-07-13</lastmod>
     <priority>0.85</priority>
   </url>
 
   <!-- Sección Galería -->
   <url>
-    <loc>https://patitascar.com.ar/#galeria</loc>
+    <loc>https://patitascar.com.ar/#requisitos</loc>
     <lastmod>2025-07-13</lastmod>
     <priority>0.80</priority>
   </url>
 
   <!-- Sección Contacto -->
   <url>
-    <loc>https://patitascar.com.ar/#contacto</loc>
+    <loc>https://patitascar.com.ar/#galeria</loc>
     <lastmod>2025-07-13</lastmod>
     <priority>0.80</priority>
   </url>
